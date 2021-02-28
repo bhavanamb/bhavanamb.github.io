@@ -25,6 +25,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -36,6 +37,7 @@ body {
 ol, ul {
 	list-style: none;
 }
+
 
 blockquote, q {
 	quotes: none;
@@ -1706,6 +1708,43 @@ input, select, textarea {
 
 /* Container */
 
+	.contact{
+	
+	padding:10px;
+	}
+	.contact h3{
+	padding: 10px 0px 2px 39px;
+	}
+	.child{
+	background:#4acaa8;
+	height:150px;
+	margin:20px;
+	opacity: 0.7;
+	border-radius: 50px 20px;
+	}
+	.child h4{
+	padding: 12px;
+margin: 21px;
+font-style: italic;
+color: #fff;
+	}
+	.contact a{
+		margin: 31px;
+		color: #fff;
+		font-size: 23px;
+		font-weight: bolder;
+		text-decoration: none;
+	}
+	.contact p{
+		margin: 31px;
+		color: #fff;
+		font-size: 23px;
+		font-weight: bolder;
+		text-decoration: none;
+	}
+	.contact a:hover{
+		color: #222 !important;
+	}
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 4.5em);
