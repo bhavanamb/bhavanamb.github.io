@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  border-collapse: collapse;
+  font-family: "Roboto", sans-serif;
+}
+
+.p-3 {
+  padding: 0.5em;
+}
+
+.pl {
+  padding-left: 0.125em;
+}
+
+.pb {
+  padding-bottom: 0.125em;
+}
+
+.pt {
+  padding-top: 0.125em;
+}
+
+.ml-3 {
+  margin-left: 0.5em;
+}
+
+.p-4 {
+  padding: 1em;
+}
+
+.m-8 {
+  margin: 2em;
+}
+
+.sec-padding {
+  padding: 10rem 0rem;
+}
+
+/* Reusable Styles */
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #fff;
+  padding-right: 2em;
+}
+
+.nav-bar a {
+  display: block;
+  padding: 1.5em;
+  color: #763914;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.skills {
+  height: 400px;
+  background-color: burlywood;
+}
+
+.contact {
+  height: 600px;
+}
+
+.sticky-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1020;
+}
+
+.img-hero {
+  position: relative;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.intro-text {
+  position: absolute;
+  top: 20%;
+  left: 11%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 40%;
+  opacity: 0.6;
+  border-radius: 2px;
+}
+
+.intro {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* timeline css*/
+
+.timeline {
+  position: relative;
+  max-width: 50%;
+  height: 60vh;
+  margin: 50px 5px;
+  padding: 3em 0;
+}
+
+/*display the timeline line*/
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.467);
+  top: 4rem;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  padding-top: 6em;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/*to display the circles on timeline*/
+
+.container::after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  right: -9px;
+  top: 15px;
+  border-radius: 50%;
+  background-color: #a35d00;
+  z-index: 1;
+}
+
+/* to move right side circles onto the timeline*/
+.right::after {
+  left: -6px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.card {
+  border: 1px grey solid;
+}
+
+/* About Text*/
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 95vh;
+  background: rgb(242, 236, 239);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5px;
+}
+
+.about-text {
+  display: flex;
+  color: #fff;
+  background-color: #a58a65;
+  text-align: justify;
+  line-height: 1.5em;
+  padding: 4.5em 2em;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.self-pic {
+  border-radius: 10%;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  margin-top: 0.5rem;
+}
+
+.c20 {
+  flex: 0 0 20%;
+}
+
+.c80 {
+  flex: 1 1 80%;
+}
+
+/*skills section*/
+
+.skills-section {
+  padding: 5.2em 2em;
+  background-image: url("./images/icons_background.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  opacity: 0.8;
+  background-size: cover;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  width: 50%;
+  margin: 1.5rem 0;
+}
+
+.skill {
+  padding: 1rem 2rem;
+  background-color: rgb(106, 43, 131);
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+/*Contact */
+
+.contact-section {
+  padding: 5.2em 2em;
+  background-color: rgb(247, 247, 247);
+}
+
+.contact-form {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.input-text {
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  background-color: rgb(223, 218, 213);
+}
+
+.form-submit {
+  margin: 1em 0;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: rgb(90, 88, 85);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
