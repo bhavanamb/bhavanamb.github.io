@@ -110,7 +110,8 @@ body {
   max-width: 50%;
   height: auto;
   text-align: justify;
-  padding: 6em 2em;
+  padding: 6em 3em;
+  font-size: 14px;
 }
 
 /*display the timeline line*/
@@ -290,4 +291,34 @@ body {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  background-color: #a58a65;
+  text-align: center;
+  color: #fff;
+  height: 8vh;
+}
+
+.footer-text {
+  align-self: center;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.fa-linkedin,
+.fa-github-square {
+  background: #000;
+  color: white;
 }
